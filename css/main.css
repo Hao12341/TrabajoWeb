@@ -1,4 +1,8 @@
 /*  Header  */
+#Logo img{
+    max-width: 116px;
+    max-height: 48px;
+}
 #Icono_Menu{
     float: right;
 }
@@ -10,13 +14,16 @@
 }
 #menu-principal ul{
     list-style: none;
-    text-decoration: none;
 }
 #menu-principal a{
+    font-weight: bold;
+    text-decoration: none;
     text-align: center;
-    width: max-content;
+    display: block;
+	position: relative;
+    padding: px;
     color: white;
-    border-bottom: 1px solid white;  
+    border-bottom: 1px solid white;
 }
 #eslogan{
     color: white;
