@@ -14,6 +14,7 @@
 }
 #menu-principal ul{
     list-style: none;
+    padding-inline-start: none;
 }
 #menu-principal a{
     font-weight: bold;
@@ -21,15 +22,16 @@
     text-align: center;
     display: block;
 	position: relative;
-    padding: px;
     color: white;
     border-bottom: 1px solid white;
 }
 #eslogan{
+    width: 375px;
+    height: 321px;
     color: white;
-    background-color: black;
-    text-align: center;
-    background-image: url("./images/macacos_gelados.png");
+    background: url("../images/bus_morado.png");
+    background-size: cover;
+
 }
 #botonLogin{
     display: block;
