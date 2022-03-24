@@ -3,7 +3,10 @@
     max-width: 116px;
     max-height: 48px;
 }
+
 #Icono_Menu{
+    max-width: 30px;
+    max-height: 20px;
     float: right;
 }
 #menu-principal{
@@ -31,14 +34,16 @@
     color: white;
     background: url("../images/morado.jpeg");
     background-size: cover;
-
 }
 #botonLogin{
-    text-decoration: none;
+    float: right;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #810052;
+}
+#botonLogin a{
+    text-decoration: none;
+    color: white;
+    border: none;
 }
 .Login{
     width: 30%;
@@ -50,7 +55,6 @@
     display: relative;
     margin-left: auto;
     margin-right: auto;
-    
 }
 #Foto_mujer_presentar{
     width: 375px;
@@ -65,8 +69,6 @@ section{
     font-size: 15px;
     font-weight: bold;
 }
-
-
 #botonServicios{
     background-color: #810052;
     display: block;
