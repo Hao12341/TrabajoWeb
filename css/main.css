@@ -29,15 +29,16 @@
     width: 375px;
     height: 321px;
     color: white;
-    background: url("../images/bus_morado.png");
+    background: url("../images/morado.jpeg");
     background-size: cover;
 
 }
 #botonLogin{
+    text-decoration: none;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    text-decoration: none;
+    background-color: #810052;
 }
 .Login{
     width: 30%;
@@ -51,6 +52,10 @@
     margin-right: auto;
     
 }
+#Foto_mujer_presentar{
+    width: 375px;
+    height: 252px;
+}
 section{
     text-align: left;
     margin: auto;
@@ -63,8 +68,13 @@ section{
 
 
 #botonServicios{
+    background-color: #810052;
     display: block;
+    border: none;
     margin-left: auto;
     margin-right: auto;
+}
+#botonServicios a{
+    color: white;
     text-decoration: none;
 }
