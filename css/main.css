@@ -34,11 +34,15 @@
 
 }
 #botonLogin{
-    text-decoration: none;
+    border: none;
     display: block;
     margin-left: auto;
     margin-right: auto;
     background-color: #810052;
+}
+#botonLogin a{
+    color: white;
+    text-decoration: none;
 }
 .Login{
     width: 30%;
@@ -59,22 +63,27 @@
 section{
     text-align: left;
     margin: auto;
+    margin-left: 36px;
 }
 /* Fin Header */
 #titulo{
     font-size: 15px;
     font-weight: bold;
 }
-
-
-#botonServicios{
-    background-color: #810052;
-    display: block;
+#texto{
+    font-size: 8px;
+}
+#tituloContacto{
+    text-align: center;
+}
+#botonContacto{
     border: none;
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    background-color: #810052;
 }
-#botonServicios a{
+#botonContacto a{
     color: white;
     text-decoration: none;
 }
