@@ -1,3 +1,6 @@
+*{
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+}
 /*  Header  */
 #Logo img{
     max-width: 116px;
@@ -8,6 +11,7 @@
     max-width: 30px;
     max-height: 20px;
     float: right;
+    margin-top: 16px;
 }
 #menu-principal{
     text-align: center;
@@ -32,13 +36,19 @@
     width: 375px;
     height: 321px;
     color: white;
+    display: flex;
     background: url("../images/morado.jpeg");
     background-size: cover;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 #botonLogin{
     float: right;
     display: block;
     background-color: #810052;
+    margin-top: 16px;
 }
 #botonLogin a{
     text-decoration: none;
