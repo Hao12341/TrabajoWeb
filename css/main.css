@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "poppins";
+    src: url(../font/Poppins-Regular.ttf);
+}
+*{
+    font-family: "poppins";
+}
 /*  Header  */
 #Logo img{
     max-width: 116px;
@@ -14,11 +21,10 @@
     clear: both;
     margin: auto;
     background-color: #810052;
-    padding: auto;
 }
 #menu-principal ul{
     list-style: none;
-    padding: 0px;
+    padding: 5px;
 }
 #menu-principal a{
     font-weight: bold;
@@ -40,7 +46,7 @@
     align-items: center;
     text-align: center;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
 }
 #botonLogin{
     float: right;
