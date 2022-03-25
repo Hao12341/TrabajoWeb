@@ -14,6 +14,7 @@
     clear: both;
     margin: auto;
     background-color: #810052;
+    padding: auto;
 }
 #menu-principal ul{
     list-style: none;
@@ -59,13 +60,17 @@
     border: 1px double black;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px;
     display: relative;
     margin-left: auto;
     margin-right: auto;
 }
-.Login{
-    text-decoration: none;
+.Login input{
+    margin-bottom: 10px;
+}
+.Login button{
+    margin: auto;
+    
 }
 #Foto_mujer_presentar{
     width: 384px;
