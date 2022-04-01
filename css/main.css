@@ -6,27 +6,43 @@
     font-family: "poppins";
 }
 /*  Header  */
+#Logo{
+    width: 116px;
+    height: 48px;
+}
 #Logo img{
-    max-width: 116px;
-    max-height: 48px;
+    width: 116px;
+    height: 48px;
 }
-#Icono_Menu{        
-    max-width: 30px;
-    max-height: 20px;
+.boton-barras{
+    margin-top: 13px;
     float: right;
-    margin-top: 16px;
+    margin-left: 4px;
 }
+#check{
+    display: none;
+}
+.boton-barras .fas, .boton-barras .fa-times {
+    font-size: 30px;
+    pointer-events: none;
+  }
 #menu-principal{
+    display: none;
     text-align: center;
     clear: both;
-    margin: auto;
+    margin: 0px auto;
     background-color: #810052;
+}
+#check:checked ~ nav{
+    display: block;
 }
 #menu-principal ul{
     list-style: none;
-    padding: 0px;
+    padding: 0px ;
+    margin: 0ch;
 }
 #menu-principal a{
+    margin: 0px;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
@@ -36,23 +52,26 @@
     border-bottom: 1px solid white;
 }
 #eslogan{
-    width: 384px;
+    width: auto;
     height: 375px;
     color: white;
     display: flex;
-    background: url("../images/Morado.jpeg");
-    background-size: cover;
-    margin: 0%;
+    margin: 0px auto;
     align-items: center;
     text-align: center;
     font-weight: bold;
     font-size: 18px;
+    background: url("../images/bus_morado.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 #botonLogin{
     float: right;
     border: none;
     display: block;
     background-color: #810052;
+    margin: 0px;
     margin-top: 16px;
 }
 #botonLogin a{
@@ -79,14 +98,13 @@
     
 }
 #Foto_mujer_presentar{
-    width: 384px;
+    width: auto;
     height: 252px;
+
 }
 section{
     text-align: left;
-    margin: auto;
-    margin-left: 36px;
-    margin-right: 36px;
+    margin:0px 36px;
 }
 /* Fin Header */
 .titulo{
