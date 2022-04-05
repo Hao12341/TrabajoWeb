@@ -6,44 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="css/main.css">
     <title>Gtistartup-Login</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <style>
         *{
             background-color: black;
-            color: white    ;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <header>
-    <!-- Logo -->
-    <a id="Logo" href="index.html"> <img src="images/logoGTI.svg" alt="Logo de la empresa"></a>
-    <!-- Fin logo -->
 
-    <!-- Opcion menu -->
-    <img id="Icono_Menu" src="C:\UPV\GitKraken\TrabajoWeb/images/Menu.jpeg" alt="Icono del Menu">
-    <!-- Fin opcion menu -->
+    <h1 id="titulo-login">LOGIN</h1>
 
-    <!-- Icono del login -->
-    <button type="submit" id="botonLogin" value="botonLogin"><a href="Login.html">Log in</a></button>
-    <!-- Fin Icono del login -->
-
-    <!-- Menu -->
-    <nav id="menu-principal">
-        <ul>
-            <li><a href="#informacion">Acerca de Nosotros</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-    <!-- Fin menu -->
-
-    </header>
     <form class="Login" action="index.html">
-        <label for="usuario">Usuario</label>
-        <input id="usuario" type="text" name="usuario" placeholder="Usuario" required>
+        <label for="usuario">Nombre</label>
+        <input id="usuario" type="text" name="usuario" placeholder="introduce tu nombre..." required>
         <label for="contraseña">Contraseña</label>
-        <input id="contraseña" type="password" name="contraseña" placeholder="Contraseña" required>
-        <button id="enviar-login" type="submit" name="Enviar">Iniciar</button>
+        <input id="contraseña" type="password" name="contraseña" placeholder="introduce tu contraseña..." required>
+        <h3><b>Contáctanos<b> para obtener un usuario.</h3>
+        <button id="enviar-login" type="submit" name="Enviar">INICIAR</button>
     </form>
 </body>
 </html>

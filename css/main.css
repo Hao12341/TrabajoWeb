@@ -4,52 +4,68 @@
 }
 *{
     font-family: "poppins";
+    margin: 0px;
 }
+
 /*  Header  */
+
 #Logo{
-    width: 116px;
-    height: 48px;
+    width: 65%;
+    height: 50%;
 }
-#Logo img{
+#Logo img{ 
     width: 116px;
     height: 48px;
 }
 .boton-barras{
     margin-top: 13px;
     float: right;
-    margin-left: 4px;
+    margin-left: 16px;
+    margin-right: 15px;
 }
 #check{
     display: none;
 }
 .boton-barras .fas, .boton-barras .fa-times {
-    font-size: 30px;
+    font-size: 18px;
     pointer-events: none;
   }
 #menu-principal{
+    position: relative;
     display: none;
     text-align: center;
-    clear: both;
     margin: 0px auto;
     background-color: #810052;
 }
 #check:checked ~ nav{
     display: block;
+    position: absolute;
+    width: 100%;
+}
+#menu-principal li{
+    padding: 15px 0px;
 }
 #menu-principal ul{
     list-style: none;
     padding: 0px ;
     margin: 0ch;
 }
+#menu-servicios{
+    border-bottom: 1px solid white;
+}
 #menu-principal a{
     margin: 0px;
     font-weight: bold;
+    font-size: 12px;
     text-decoration: none;
     text-align: center;
     display: block;
 	position: relative;
     color: white;
-    border-bottom: 1px solid white;
+}
+#menu-servicios{
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed white;
 }
 #eslogan{
     width: auto;
@@ -67,31 +83,27 @@
     background-size: cover;
 }
 #botonLogin{
+    margin: auto;
     float: right;
     border: none;
     display: block;
     background-color: #810052;
-    margin: 0px;
+    width: 61px;
+    height: 6px;
+    padding: 8px;
     margin-top: 16px;
+    display: flex;
+    align-items: center;
+    
 }
 #botonLogin a{
+    margin: 0px auto 0px auto;
+    text-align: center;
     text-decoration: none;
+    font-size: 8px;
+    font-weight: bold;
     color: white;
     border: none;
-}
-.Login{
-    width: 30%;
-    height: 30%;
-    border: 1px double black;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    display: relative;
-    margin-left: auto;
-    margin-right: auto;
-}
-.Login input{
-    margin-bottom: 10px;
 }
 .Login button{
     margin: auto;
@@ -127,4 +139,47 @@ section{
 footer{
     text-align: center;
     font-size: 7px;
+}
+
+
+/*-------------Login----------------*/
+
+#titulo-login{
+    padding-left: 38px;
+    font-size: 26px;
+    font-weight: bolder;
+    padding-bottom: 24px;
+    
+}
+
+.Login{
+    border: 1px double black;
+    display: flex;
+    flex-direction: column;
+    padding-left: 38px;
+    padding-right: 38px;
+    display: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+}
+.Login input{
+    color: black;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+}
+h3{
+    font-size: 8px;
+    padding-bottom: 30px;
+}
+#enviar-login{
+    border: none;
+    box-shadow: 1px grey;
+    background-color: #810052;
+    font-weight: bold;
+    font-size: 9px;
+    width: 61px;    
+    height: 16px;
 }
