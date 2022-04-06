@@ -8,17 +8,22 @@
 }
 
 /*  Header  */
-
+.texto{
+    margin-top: 7px;
+    margin-bottom: 39px;
+    font-size: 8px;
+}
 #Logo{
     width: 65%;
     height: 50%;
+    
 }
-#Logo img{ 
+#Logo img{
     width: 116px;
     height: 48px;
 }
 .boton-barras{
-    margin-top: 13px;
+    margin-top: 17px;
     float: right;
     margin-left: 16px;
     margin-right: 15px;
@@ -28,30 +33,31 @@
 }
 .boton-barras .fas, .boton-barras .fa-times {
     font-size: 18px;
-    pointer-events: none;
+    pointer-events: pointer;
   }
 #menu-principal{
-    position: relative;
-    display: none;
+    position: absolute;
+    display: absolute;
     text-align: center;
+    width: 100%;
     margin: 0px auto;
     background-color: #810052;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.5s ease-in-out;
 }
-#check:checked ~ nav{
-    display: block;
+#check:checked + nav#menu-principal{
     position: absolute;
     width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 #menu-principal li{
     padding: 15px 0px;
 }
 #menu-principal ul{
+    display: hidden;
     list-style: none;
     padding: 0px ;
     margin: 0ch;
-}
-#menu-servicios{
-    border-bottom: 1px solid white;
 }
 #menu-principal a{
     margin: 0px;
@@ -64,10 +70,16 @@
     color: white;
 }
 #menu-servicios{
-    border-top: 1px dashed white;
-    border-bottom: 1px dashed white;
+    border-bottom: 1px solid white;
+}
+
+#menu-servicios{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 #eslogan{
+    padding: 0px 85px;
+    clear: both;
     width: auto;
     height: 375px;
     color: white;
@@ -76,8 +88,8 @@
     align-items: center;
     text-align: center;
     font-weight: bold;
-    font-size: 18px;
-    background: url("../images/bus_morado.png");
+    font-size: 15px;
+    background: url("../images/tabletm.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -91,7 +103,7 @@
     width: 61px;
     height: 6px;
     padding: 8px;
-    margin-top: 16px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     
@@ -109,32 +121,45 @@
     margin: auto;
     
 }
+/* Fin Header */
+.titulo{
+    margin-top: 34px;
+    color: #810052;
+    font-size: 15px;
+    font-weight: bold;
+}
+.tituloContacto{
+    margin-bottom: 10px;
+    color: #810052;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+#informacion{
+    margin-top: 34px;
+}
 #Foto_mujer_presentar{
-    width: auto;
-    height: 252px;
+    width: 100%;
+    height: 100%;
 
 }
 section{
     text-align: left;
     margin:0px 36px;
 }
-/* Fin Header */
-.titulo{
-    color: #810052;
-}
-.tituloContacto{
-    text-align: center;
-}
 
 #botonContacto{
+    font-size: 9px;
     background-color: #810052;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: none;
 }
 #botonContacto a{
     color: white;
     text-decoration: none;
+    margin-bottom: 61px;
 }
 footer{
     text-align: center;
@@ -143,7 +168,6 @@ footer{
 
 
 /*-------------Login----------------*/
-
 #titulo-login{
     padding-left: 38px;
     font-size: 26px;
@@ -153,7 +177,6 @@ footer{
 }
 
 .Login{
-    border: 1px double black;
     display: flex;
     flex-direction: column;
     padding-left: 38px;
@@ -179,7 +202,18 @@ h3{
     box-shadow: 1px grey;
     background-color: #810052;
     font-weight: bold;
-    font-size: 9px;
-    width: 61px;    
-    height: 16px;
+    font-size: 10px;
+    width: 81px;    
+    height: 36px;
+}
+.headerIndex{
+    display: flex;
+    flex-direction: column;
+}
+.fa-solid, .fa-xmark{
+    font-size: 34px;
+    margin-top: 27px;
+    margin-right: 38px;
+    float: right;
+    clear: both;
 }
