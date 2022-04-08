@@ -8,29 +8,57 @@
     <title>Gtistartup-Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />            
     <style>
-        *{
-            background-color: blueviolet;
+    *{
+        /*background-color: blueviolet;*/
         color: white;
-        /*background: url("../images/2303GRONINGEN-5.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;*/
+    }
+
+
+        .fondo{ 
+        width: auto;
+        height: 707px;;
+        background-image: url("../img/tabletm.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
         }
     </style>
 </head>
 <body>
-    
+<nav class="fondo">
     <nav class="headerIndex">
-        <a href="index.html"><i class='fa-solid fa-xmark'></i></a> 
-        <h1 id="titulo-login">LOGIN</h1>
-    </nav>
-    <form class="Login" action="index.html">
-        <label for="usuario">Nombre</label>
-        <input id="usuario" type="text" name="usuario" placeholder="introduce tu nombre..." required>
-        <label for="contraseña">Contraseña</label>
-        <input id="contraseña" type="password" name="contraseña" placeholder="introduce tu contraseña..." required>
-        <h3><b>Contáctanos<b> para obtener un usuario.</h3>
-        <button id="enviar-login" type="submit" name="Enviar">INICIAR</button>
-    </form>
+    <a href="index.html"><i class='fa-solid fa-xmark'></i></a> 
+    <h1 id="titulo-login">LOGIN</h1>
+</nav>
+<form onsubmit="enviarLogin(event)" class="Login">
+    <label for="usuario">Nombre</label>
+    <input id="usuario" type="text" name="usuario" placeholder="introduce tu nombre..." required>
+    <label for="contraseña">Contraseña</label>
+    <input id="contraseña" type="password" name="contraseña" placeholder="introduce tu contraseña..." required>
+    <h3><b>Contáctanos<b> para obtener un usuario.</h3>
+    <button id="enviar-login"  type="submit" name="Enviar">INICIAR</button>
+</form>
+</nav>
+    
+    <script>
+    function enviarLogin(event) {
+        event.preventDefault();
+        console.log("Login enviado");
+
+        let nombreUsuario = document.getElementById("usuario").value;
+        let pass = document.getElementById("contraseña").value;
+        
+        if( "admin" == nombreUsuario && "1234" == pass){
+            location.href="direccion.html"
+        }
+        if("user" == nombreUsuario && "1234" == pass){
+            location.href="user.html"
+        }
+        if(pass != "1234"){
+            alert("Usario o Contraseña incorrecta");
+        }
+    }
+
+    </script>
 </body>
 </html>
